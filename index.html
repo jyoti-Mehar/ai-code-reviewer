@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Code Reviewer</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef2f7;
+      padding: 40px;
+    }
+
+    body.dark {
+      background: #121212;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    body.dark .container {
+      background: #1e1e1e;
+    }
+
+    button {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 6px;
+    }
+
+    .analyze { background: #28a745; color: #fff; }
+    .clear { background: #dc3545; color: #fff; }
+    .dark-btn { background: #343a40; color: #fff; }
+    .download { background: #007bff; color: #fff; }
+
+    .card {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      background: #f8f9fa;
+      border-left: 5px solid #28a745;
+    }
+
+    body.dark .card {
+      background: #2a2a2a;
+    }
+
+    .warn-ok { color: green; font-weight: bold; }
+    .warn-bad { color: red; font-weight: bold; }
+
+    ul { margin-top: 10px; }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>AI Code Reviewer</h2>
+
+    <!-- ✅ MULTIPLE FILE -->
+    <input type="file" id="fileInput" multiple accept=".js" />
+    <br><br>
+
+    <button class="analyze" onclick="uploadFile()">Analyze</button>
+    <button class="clear" onclick="clearResult()">Clear</button>
+    <button class="dark-btn" onclick="toggleDark()">Dark Mode</button>
+    <button class="download" onclick="downloadJSON()">Download JSON</button>
+
+    <div id="result"></div>
+    <!-- 🔹 Code Preview -->
+    <div id="codePreview" style="margin-top:20px;"></div>
+
+     <!-- 🔹 History -->
+    <div id="history" style="margin-top:20px;"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

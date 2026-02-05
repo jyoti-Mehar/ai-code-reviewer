@@ -1,0 +1,60 @@
+body {
+  font-family: Arial;
+  padding: 40px;
+}
+
+button {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 20px;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+#result {
+  margin-top: 20px;
+}
+
+.card {
+  background: #111;
+  color: #0fdf9f;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+button {
+  background: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#summary {
+  margin-top: 15px;
+  padding: 10px;
+  background: #f0f8ff;
+  border-left: 5px solid #4caf50;
+}
+.result-card {
+  border-left: 6px solid #28a745;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+.dark .result-card {
+  background: #1e1e1e;
+}
