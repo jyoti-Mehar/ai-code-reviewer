@@ -25,7 +25,7 @@ async function uploadFile() {
   resultDiv.innerHTML = "Analyzing file...";
 
   try {
-    const response = await fetch("http://localhost:5000/api/analyze/upload", {
+    const response = await fetch("https://ai-code-reviewer-92az.onrender.com/api/analyze/upload", {
       method: "POST",
       body: formData
     });
